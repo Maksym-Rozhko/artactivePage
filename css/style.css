@@ -1,0 +1,3191 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+/* line 23, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+/* line 31, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+/* line 40, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+/* line 53, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 64, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+/* line 76, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+/* line 85, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+/* line 95, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 105, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+/* line 116, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+/* line 125, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 133, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+/* line 148, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+/* line 160, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+/* line 176, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+/* line 186, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+/* line 195, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+/* line 206, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+/* line 218, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+/* line 229, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+/* line 240, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+/* line 253, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+/* line 261, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+/* line 270, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+/* line 280, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+/* line 290, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+/* line 299, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+/* line 308, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+/* line 320, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+/* line 328, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+/* line 339, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+/* line 347, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Muller Bold';
+  src: url("../fonts/muller-bold-webfont.woff2") format("woff2"), url("../fonts/muller-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller Extra Bold';
+  src: url("../fonts/muller-extrabold-webfont.woff2") format("woff2"), url("../fonts/muller-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller Heavy';
+  src: url("../fonts/mullerheavy-webfont.woff2") format("woff2"), url("../fonts/mullerheavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller Medium';
+  src: url("../fonts/mullermedium-webfont.woff2") format("woff2"), url("../fonts/mullermedium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans - Extra Bold';
+  src: url("../fonts/opensans-extrabold-webfont.woff2") format("woff2"), url("../fonts/opensans-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans - Semi Bold';
+  src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+/* line 10, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+.wrapper {
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 2, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 1, 1, 0.4);
+  z-index: 1000;
+}
+
+/* line 11, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-form {
+  padding: 45px 60px 73px 62px;
+  background-image: linear-gradient(to right, #a044ff 0%, #6a3093 100%);
+  width: 363px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-text {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+/* line 31, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-title {
+  margin-top: 0;
+  margin-bottom: 55px;
+  color: #fff;
+  font-family: "Open Sans - Semi Bold";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-input {
+  background: transparent;
+  position: relative;
+  bottom: 15px;
+  width: 240px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 40px;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+/* line 55, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-input:focus {
+  outline: none;
+}
+
+/* line 60, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-tel {
+  opacity: 0.8;
+}
+
+/* line 64, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up input[type="text"]::placeholder {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* line 72, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up input[type="tel"]::placeholder {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  font-style: italic;
+}
+
+/* line 81, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-btn {
+  width: 240px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #fb0275;
+  border: 2px solid #fb0275;
+  transition-duration: 0.5s;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 91, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-btn:hover {
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+
+/* line 97, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-close {
+  position: absolute;
+  left: 270px;
+  top: 70px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+/* line 109, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-close::before, .pop-up-close::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 15px;
+  width: 19px;
+  height: 1px;
+  background: #fff;
+}
+
+/* line 120, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-close::after {
+  content: "";
+  transform: rotate(-45deg);
+}
+
+/* line 125, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_pop-up.scss */
+.pop-up-close::before {
+  transform: rotate(45deg);
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.header {
+  padding-top: 25px;
+  padding-bottom: 65px;
+  background-image: linear-gradient(to right, #a044ff 0%, #6a3093 100%);
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* line 12, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container-logo {
+  display: block;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans - Extra Bold", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .navigation {
+  display: none;
+  width: 290px;
+  height: 100vh;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fff;
+}
+
+/* line 29, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .navigation-link {
+  display: block;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.65;
+  color: #333;
+  font-family: "Open Sans - Semi Bold", sans-serif;
+  font-size: 13px;
+  line-height: 48px;
+  letter-spacing: 0.65px;
+  transition-duration: 1s;
+  padding: 5px 15px;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .navigation-link:hover {
+  opacity: 1;
+}
+
+/* line 47, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .nav-burger {
+  width: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* line 60, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .nav-burger-item {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  transition: 0.5s linear;
+}
+
+/* line 68, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .nav-burger-item::before, .container .nav-burger-item::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  transition: 0.5s linear;
+}
+
+/* line 80, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .nav-burger-item::before {
+  content: "";
+  top: -7px;
+}
+
+/* line 85, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .nav-burger-item::after {
+  content: "";
+  bottom: -7px;
+}
+
+/* line 109, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .tel-box {
+  padding-left: 15px;
+  margin-top: 100px;
+}
+
+/* line 113, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .tel-box-link {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  color: #333;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 30px;
+}
+
+/* line 124, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .tel-box-btn {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 165px;
+  color: #fb0275;
+  border-radius: 17px;
+  border: 2px solid #fb0275;
+  font-family: "Open Sans - Extra Bold", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.55px;
+  background: transparent;
+  cursor: pointer;
+  padding: 7px 10px;
+  transition-duration: 1s;
+}
+
+/* line 138, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container .tel-box-btn:hover {
+  background-color: #fb0275;
+  border: 2px solid #fb0275;
+  color: #fff;
+}
+
+/* line 146, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container-image {
+  margin-bottom: 50px;
+}
+
+/* line 149, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container-image-header {
+  display: block;
+}
+
+/* line 154, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container-text {
+  margin-bottom: 45px;
+}
+
+/* line 157, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container-text-title {
+  color: #fff;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-bottom: 35px;
+  max-width: 217px;
+  font-family: "Muller Extra Bold", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1.06px;
+}
+
+/* line 169, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container-text-under {
+  color: #fff;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0.85;
+  font-family: "Muller Medium", sans-serif;
+  font-size: 21px;
+}
+
+/* line 182, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container-order-btn {
+  width: 289px;
+  border-radius: 24px;
+  border: 2px solid #fb0275;
+  background-color: #fb0275;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.57px;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+/* line 68, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+.container-order-btn:hover {
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+
+/* line 187, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.container-order-text {
+  color: #fff;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 210px;
+  margin-top: 30px;
+  opacity: 0.85;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* line 200, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.button-down {
+  position: relative;
+  display: none;
+  width: 19px;
+  height: 31px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 212, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.button-down::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 1px solid #fff;
+}
+
+/* line 222, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.switch {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  right: 160px;
+  top: 50%;
+  transform: translateY(-180px);
+}
+
+/* line 233, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.switch-list {
+  margin-bottom: 15px;
+}
+
+/* line 236, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.switch-list:last-child {
+  margin-bottom: 0;
+}
+
+/* line 240, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.switch-list-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  border: none;
+  font-size: 0;
+  transform: scale(0.5);
+}
+
+/* line 251, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.switch-list .switch-btn-active {
+  border: 10px solid #ccc;
+  border-radius: 50%;
+  background: transparent;
+  width: 10px;
+  height: 34px;
+  position: relative;
+  left: -6px;
+}
+
+/* line 262, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.switch-list-active {
+  margin-bottom: 70px;
+  position: relative;
+}
+
+/* line 267, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.switch-inner {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 274, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.switch-inner-list {
+  margin-bottom: 30px;
+  text-decoration: none;
+  width: 22px;
+  border: 2px solid #cccccc;
+  background-color: #cccccc;
+  opacity: 0.5;
+}
+
+/* line 282, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.switch-inner-list:last-child {
+  margin-bottom: 0;
+}
+
+/* line 288, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_header.scss */
+.switch .switch-inner-active {
+  position: absolute;
+  left: 0;
+  top: 70px;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-us {
+  padding-top: 40px;
+  padding-bottom: 55px;
+  position: relative;
+}
+
+/* line 9, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-content-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #7f38bd;
+  font-family: "Muller Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* line 14, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-content-subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #383d52;
+  font-family: "Muller Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-content-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #5e606a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 25, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* line 30, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/mobile/about-us/big-dashed.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+  width: 290px;
+  top: 10px;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images-box {
+  width: 130px;
+  text-align: center;
+  position: relative;
+}
+
+/* line 46, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  transform: translateX(50%);
+  top: -11px;
+}
+
+/* line 57, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images-box .img-box-text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #5e606a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* line 69, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images .box-ebook {
+  align-self: center;
+  margin-bottom: 45px;
+}
+
+/* line 73, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images .box-ebook:first-child::before {
+  display: none;
+}
+
+/* line 77, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images .box-ebook:last-child {
+  margin-bottom: 0;
+}
+
+/* line 84, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images .box-tablet::before {
+  background-image: url("../images/mobile/about-us/vector1.png");
+}
+
+/* line 89, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images .box-writer {
+  margin-top: 73px;
+  margin-right: 44px;
+  margin-bottom: 40px;
+}
+
+/* line 94, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images .box-writer::before {
+  background-image: url("../images/mobile/about-us/vector2.png");
+  top: 11px;
+  left: 100px;
+}
+
+/* line 101, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images .box-moving {
+  align-self: center;
+}
+
+/* line 104, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images .box-moving::before {
+  background-image: url("../images/mobile/about-us/vector3.png");
+  left: 80px;
+}
+
+/* line 110, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images-big-box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* line 115, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images .img-box {
+  margin-right: auto;
+  margin-left: auto;
+  width: 106px;
+  height: 106px;
+  background-color: #f0e2ff;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* line 124, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images .img-box-images {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 130, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_about.scss */
+.about-images .img-box .xxl {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.section-services {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #faf8fb;
+  position: relative;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.section-services::before {
+  content: "1";
+  position: absolute;
+  text-shadow: 0 0 21px rgba(81, 8, 86, 0.08);
+  font-family: "Muller Heavy", sans-serif;
+  font-size: 200px;
+  font-weight: 400;
+  left: 40px;
+  width: 95px;
+  height: 137px;
+  color: #faf8fb;
+  top: 70px;
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.services-content {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 40px;
+}
+
+/* line 22, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.services-content-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #7f38bd;
+  font-family: "Muller Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.services-content-subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #383d52;
+  font-family: "Muller Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* line 35, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.services-content-ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* line 40, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.services-content-ul-list {
+  list-style: none;
+  color: #5e606a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 48, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.services-content-ul-list::before {
+  content: "•";
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+}
+
+/* line 58, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* line 63, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-box {
+  width: 290px;
+  height: 188px;
+  position: relative;
+}
+
+/* line 68, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-box::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #bcb4bd;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  z-index: 100;
+}
+
+/* line 81, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-box::after {
+  content: "";
+  position: absolute;
+  width: 265px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #e3dde9;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10px;
+}
+
+/* line 95, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-box-item-img {
+  display: block;
+  box-shadow: 0 20px 46px rgba(80, 9, 79, 0.2);
+  border-radius: 10px;
+  width: 290px;
+  height: 188px;
+  position: relative;
+  z-index: 100;
+}
+
+/* line 106, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-box .slide1 {
+  position: absolute;
+}
+
+/* line 111, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-text {
+  margin-top: 10px;
+  margin-bottom: 35px;
+  color: #5e606a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 121, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+/* line 128, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-arrows-arrow {
+  width: 80px;
+  border-bottom: 2px solid #883eca;
+  border-radius: 1px;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  margin-right: 40px;
+}
+
+/* line 137, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-arrows-arrow:last-child {
+  margin-right: 0;
+}
+
+/* line 141, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-arrows-arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 152, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-arrows .arrow-left::before {
+  background-image: url("../images/mobile/services/arrow-btn-left.png");
+  width: 9px;
+  height: 15px;
+  left: -10px;
+}
+
+/* line 159, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.slider-arrows .arrow-right::before {
+  background-image: url("../images/mobile/services/arrow-btn-right.png");
+  width: 8px;
+  height: 14px;
+  right: -10px;
+}
+
+/* line 168, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.services-form-box {
+  width: 290px;
+  box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+  border-radius: 10px;
+  background-color: #883eca;
+  padding: 35px 20px 30px 25px;
+}
+
+/* line 176, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.services-form-box .services-form-text {
+  color: #fff;
+  font-size: 13px;
+  line-height: 24px;
+  font-style: italic;
+}
+
+/* line 183, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.services-form-box .services-form-title {
+  color: #fff;
+  font-family: "Open Sans - Semi Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+/* line 193, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_services.scss */
+.services-form-box-button {
+  width: 242px;
+  border-radius: 24px;
+  border: 2px solid #fb0275;
+  background-color: #fb0275;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.57px;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  padding: 12px 10px;
+}
+
+/* line 68, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+.services-form-box-button:hover {
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_interior.scss */
+.section-interior {
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_interior.scss */
+.section-interior::before {
+  content: "2";
+  position: absolute;
+  text-shadow: 0 0 21px rgba(81, 8, 86, 0.08);
+  font-family: "Muller Heavy", sans-serif;
+  font-size: 200px;
+  font-weight: 400;
+  left: 40px;
+  width: 113px;
+  height: 140px;
+  color: #fff;
+  top: 5px;
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_interior.scss */
+.interior-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_interior.scss */
+.interior-content-subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #383d52;
+  font-family: "Muller Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+/* line 27, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_interior.scss */
+.interior-content-text {
+  width: 291px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #5e606a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 45px;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_interior.scss */
+.interior-content-button {
+  width: 289px;
+  border-radius: 24px;
+  border: 2px solid #fb0275;
+  background-color: #fb0275;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.57px;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 68, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+.interior-content-button:hover {
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_interior.scss */
+.interior-content-button:hover {
+  color: #fb0275;
+  border: 2px solid #fb0275;
+}
+
+/* line 47, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_interior.scss */
+.interior-content-img {
+  position: relative;
+  right: -37px;
+  width: 268px;
+}
+
+/* line 52, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_interior.scss */
+.interior-content-img::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  width: 64px;
+  height: 245px;
+  background-image: url("../images/mobile/reviews/flower.png");
+}
+
+/* line 62, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_interior.scss */
+.interior-content-img-sofa {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 268px;
+}
+
+/* line 69, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_interior.scss */
+.interior-content-img .desktop-img-sofa {
+  display: none;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.section-printing {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background-color: #faf8fb;
+  position: relative;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.section-printing::before {
+  content: "3";
+  position: absolute;
+  text-shadow: 0 0 21px rgba(81, 8, 86, 0.08);
+  font-family: "Muller Heavy", sans-serif;
+  font-size: 200px;
+  font-weight: 400;
+  left: 40px;
+  width: 114px;
+  height: 144px;
+  color: #faf8fb;
+  top: 5px;
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-content {
+  position: relative;
+  margin-bottom: 30px;
+  z-index: 10;
+}
+
+/* line 22, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-content-subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #383d52;
+  font-family: "Muller Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-content-box {
+  max-height: 305px;
+  overflow: scroll;
+}
+
+/* line 32, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-content-box-text {
+  width: 288px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #5e606a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+/* line 38, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-content-box-text:last-child {
+  margin-bottom: 0;
+}
+
+/* line 44, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-content-img {
+  width: 304px;
+  margin-bottom: 45px;
+}
+
+/* line 48, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-content-img-style {
+  display: block;
+}
+
+/* line 54, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-form {
+  position: relative;
+}
+
+/* line 57, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-form-text {
+  color: #383d52;
+  font-size: 16px;
+  line-height: 30px;
+  font-style: italic;
+}
+
+/* line 64, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-form-title {
+  width: 180px;
+  color: #383d52;
+  font-family: "Open Sans - Semi Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 74, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-form-button {
+  width: 288px;
+  border-radius: 24px;
+  border: 2px solid #fb0275;
+  background-color: #fb0275;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.57px;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  padding: 12px 10px;
+}
+
+/* line 68, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+.printing-form-button:hover {
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+
+/* line 79, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-form-button:hover {
+  color: #fb0275;
+  border: 2px solid #fb0275;
+}
+
+/* line 85, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-form input[placeholder] {
+  color: #868995;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: italic;
+  padding-left: 10px;
+  opacity: 0.8;
+}
+
+/* line 95, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-form-input {
+  background: transparent;
+  position: relative;
+  bottom: 15px;
+  width: 290px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* line 104, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_printing.scss */
+.printing-form-input:focus {
+  outline: none;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_reviews.scss */
+.section-reviews {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+/* line 6, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_reviews.scss */
+.reviews-content-title {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #7f38bd;
+  font-family: "Muller Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_reviews.scss */
+.reviews {
+  width: 288px;
+  box-shadow: 0 0 10px rgba(81, 8, 86, 0.08);
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_reviews.scss */
+.reviews-next {
+  display: none;
+}
+
+/* line 23, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_reviews.scss */
+.reviews-box {
+  padding-bottom: 50px;
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_reviews.scss */
+.reviews-box-avatar {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+/* line 32, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_reviews.scss */
+.reviews-box-content {
+  padding-left: 20px;
+  padding-right: 12px;
+}
+
+/* line 36, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_reviews.scss */
+.reviews-box-content-text {
+  margin-bottom: 30px;
+  color: #5e606a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+/* line 42, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_reviews.scss */
+.reviews-box-content-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #383d52;
+  font-family: "Open Sans - Semi Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* line 52, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_reviews.scss */
+.reviews-box-content-link {
+  color: #3594dd;
+  font-family: "Open Sans - Semi Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.section-faq {
+  padding-top: 35px;
+  padding-bottom: 85px;
+}
+
+/* line 6, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-content {
+  margin-bottom: 30px;
+}
+
+/* line 9, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-content-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #7f38bd;
+  font-family: "Muller Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/* line 15, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-content-subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #383d52;
+  font-family: "Open Sans - Semi Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-content-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #5e606a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 289px;
+}
+
+/* line 25, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-form {
+  box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+  border-radius: 10px;
+  background-color: #883eca;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-form-wrapper {
+  width: 245px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+/* line 40, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-form-wrapper::before {
+  content: "";
+  width: 96px;
+  height: 104px;
+  position: absolute;
+  top: -45px;
+  right: -25px;
+  background-image: url("../images/mobile/footer/circle.png");
+}
+
+/* line 50, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-form-wrapper::after {
+  content: "?";
+  position: absolute;
+  top: -42px;
+  right: -20px;
+  color: #fff;
+  font-family: "Muller Bold";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 54px;
+}
+
+/* line 63, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-form-text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* line 71, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-form-title {
+  width: 180px;
+  color: #fff;
+  font-family: "Open Sans - Semi Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* line 82, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-form-button {
+  width: 245px;
+  border-radius: 24px;
+  border: 2px solid #fb0275;
+  background-color: #fb0275;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.57px;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  padding: 12px 10px;
+}
+
+/* line 68, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+.faq-form-button:hover {
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+
+/* line 87, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-form-button:hover {
+  border: 2px solid #fff;
+}
+
+/* line 92, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-form-label {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: italic;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 0.8;
+}
+
+/* line 103, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-form-input {
+  background: transparent;
+  color: #fff;
+  position: relative;
+  bottom: 10px;
+  width: 243px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* line 113, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_faq.scss */
+.faq-form-input:focus {
+  outline: none;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.section-contacts {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 140px;
+  background-image: url("../images/mobile/footer/map.png");
+}
+
+/* line 8, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.map-location {
+  width: 25px;
+  height: 38px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: -52px;
+  transition-duration: 0.5s;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.contacts-wrapper {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 23px 32px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.contacts-wrapper .contacts {
+  padding-left: 40px;
+  width: 230px;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.contacts-wrapper .contacts-title {
+  margin-bottom: 20px;
+  color: #7f38bd;
+  font-family: "Muller Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+/* line 51, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.contacts-wrapper .contacts-links {
+  padding-left: 20px;
+}
+
+/* line 54, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.contacts-wrapper .contacts-links-link {
+  position: relative;
+  display: block;
+  color: #5e606a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition-duration: 0.5s;
+}
+
+/* line 65, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.contacts-wrapper .contacts-links-link:hover {
+  color: #883eca;
+}
+
+/* line 69, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.contacts-wrapper .contacts-links-link::before {
+  content: "";
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 84, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.contacts-wrapper .contacts-links .location-link::before {
+  width: 11px;
+  height: 17px;
+  background-image: url("../images/mobile/footer/location.png");
+  transition-duration: 0.5s;
+}
+
+/* line 93, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.contacts-wrapper .contacts-links .message-link::before {
+  width: 13px;
+  height: 10px;
+  background-image: url("../images/mobile/footer/message.png");
+  transition-duration: 0.5s;
+}
+
+/* line 102, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.contacts-wrapper .contacts-links .tel-link::before {
+  width: 14px;
+  height: 15px;
+  background-image: url("../images/mobile/footer/tel.png");
+  transition-duration: 0.5s;
+}
+
+/* line 110, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_contacts.scss */
+.contacts-wrapper .contacts-links .contacts-links-link:hover::before {
+  transform: scale(1.5);
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_footer.scss */
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #65269d;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_footer.scss */
+.footer-privacy {
+  text-align: center;
+}
+
+/* line 10, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_footer.scss */
+.footer-privacy-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.5;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_footer.scss */
+.footer-privacy-text:hover {
+  opacity: 1;
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_footer.scss */
+.footer-privacy .confidential {
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+
+/* line 31, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_footer.scss */
+.footer-privacy .designer {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  /* line 2, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .wrapper {
+    width: 720px;
+  }
+  /* line 7, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .header {
+    padding-bottom: 40px;
+  }
+  /* line 13, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .container .navigation {
+    width: 300px;
+    top: -25px;
+    left: 435px;
+    z-index: 10;
+    padding-left: 70px;
+    padding-top: 25px;
+  }
+  /* line 21, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .container .navigation-link {
+    padding: 0;
+  }
+  /* line 25, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .container .navigation .tel-box {
+    padding-left: 0;
+  }
+  /* line 31, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .container .nav-burger-item {
+    z-index: 10;
+    background-color: #aeaeae;
+  }
+  /* line 35, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .container .nav-burger-item::before, .container .nav-burger-item::after {
+    background-color: #aeaeae;
+  }
+  /* line 44, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .header-content {
+    display: flex;
+  }
+  /* line 47, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .header-content .container-image {
+    margin-bottom: 0;
+  }
+  /* line 50, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .header-content .container-image-header {
+    width: 440px;
+    height: 462px;
+  }
+  /* line 56, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .header-content .inner-content {
+    margin-top: 40px;
+  }
+  /* line 59, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .header-content .inner-content .container-text {
+    margin-bottom: 30px;
+  }
+  /* line 61, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .header-content .inner-content .container-text-title {
+    font-size: 45px;
+    max-width: 268px;
+    margin-bottom: 30px;
+  }
+  /* line 69, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .header-content .inner-content .container-order-btn {
+    width: 250px;
+  }
+  /* line 75, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .button-down {
+    display: block;
+  }
+  /* line 80, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-us {
+    position: relative;
+    padding-bottom: 145px;
+  }
+  /* line 104, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+  .about-us::before, .about-us::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    z-index: 10;
+  }
+  /* line 112, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+  .about-us::before {
+    border-left: 2px solid #883eca;
+    right: 50%;
+    transform: translateX(-5px);
+    bottom: -15px;
+  }
+  /* line 119, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+  .about-us::after {
+    border-right: 2px solid #883eca;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+  }
+  /* line 86, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-content {
+    padding-left: 15px;
+  }
+  /* line 89, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-content-subtitle {
+    font-size: 32px;
+  }
+  /* line 96, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-images::before {
+    background-image: url("../images/tablet/about/dashed-tablet.png");
+    width: 500px;
+    height: 280px;
+    top: 65px;
+    left: 100px;
+  }
+  /* line 104, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-images .box-ebook {
+    margin-bottom: 0;
+    right: 120px;
+  }
+  /* line 109, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-images .box-tablet {
+    width: 165px;
+    bottom: 45px;
+  }
+  /* line 113, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-images .box-tablet::before {
+    background-image: url("../images/tablet/about/vector11.png");
+    left: 13px;
+    top: 30px;
+  }
+  /* line 120, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-images .box-writer {
+    width: 150px;
+    margin: 0;
+    top: 45px;
+  }
+  /* line 125, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-images .box-writer::before {
+    top: 0;
+    left: 101px;
+  }
+  /* line 131, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-images-big-box {
+    justify-content: space-between;
+  }
+  /* line 135, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-images .box-moving {
+    left: 80px;
+  }
+  /* line 138, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .about-images .box-moving::before {
+    background-image: url("../images/tablet/about/vector33.png");
+    top: 17px;
+    left: -5px;
+  }
+  /* line 148, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .section-services::before {
+    left: 55px;
+  }
+  /* line 153, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 157, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services-content {
+    margin-bottom: 70px;
+  }
+  /* line 160, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services-content-subtitle {
+    font-size: 32px;
+    margin-bottom: 65px;
+  }
+  /* line 166, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services .slider {
+    position: relative;
+    margin-top: 0;
+  }
+  /* line 170, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services .slider-box {
+    width: 690px;
+    height: 450px;
+  }
+  /* line 174, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services .slider-box::before {
+    width: 670px;
+    top: -10px;
+  }
+  /* line 179, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services .slider-box::after {
+    width: 650px;
+    top: -20px;
+  }
+  /* line 185, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services .slider-box-item-img {
+    width: 690px;
+    height: 450px;
+  }
+  /* line 192, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services .slider-text {
+    margin-top: 30px;
+    text-align: end;
+  }
+  /* line 197, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services .slider-arrows {
+    position: absolute;
+    bottom: 0;
+  }
+  /* line 203, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services-form-box {
+    width: 690px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* line 209, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services-form-box .services-form {
+    display: flex;
+  }
+  /* line 212, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services-form-box .services-form-title {
+    margin-bottom: 0;
+    margin-left: 35px;
+  }
+  /* line 218, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .services-form-box-button {
+    min-height: 45px;
+    padding: 0;
+  }
+  /* line 226, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .section-interior {
+    padding-bottom: 100px;
+  }
+  /* line 229, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .section-interior::before {
+    left: 55px;
+    top: -15px;
+  }
+  /* line 235, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .interior {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 104, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+  .interior::before, .interior::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    z-index: 10;
+  }
+  /* line 112, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+  .interior::before {
+    border-left: 2px solid #883eca;
+    right: 50%;
+    transform: translateX(-5px);
+    bottom: -15px;
+  }
+  /* line 119, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+  .interior::after {
+    border-right: 2px solid #883eca;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+  }
+  /* line 241, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .interior-content-subtitle {
+    font-size: 32px;
+    width: 410px;
+    margin-bottom: 60px;
+  }
+  /* line 247, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .interior-content-text {
+    width: 550px;
+  }
+  /* line 251, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .interior-content-button {
+    width: 240px;
+    max-height: 50px;
+    padding: 8px 5px;
+  }
+  /* line 256, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .interior-content-img {
+    width: 500px;
+    right: -220px;
+  }
+  /* line 260, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .interior-content-img::before {
+    background-image: url("../images/tablet/interior/flower.png");
+    height: 442px;
+    width: 145px;
+  }
+  /* line 266, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .interior-content-img-sofa {
+    width: 500px;
+  }
+  /* line 274, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .section-printing {
+    padding-top: 110px;
+  }
+  /* line 277, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .section-printing::before {
+    left: 55px;
+    top: 30px;
+  }
+  /* line 283, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .printing {
+    padding-left: 15px;
+  }
+  /* line 287, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .printing-content-subtitle {
+    font-size: 32px;
+    width: 435px;
+  }
+  /* line 292, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .printing-content-box {
+    max-height: 160px;
+  }
+  /* line 295, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .printing-content-box-text {
+    width: 635px;
+  }
+  /* line 300, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .printing-content-block {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  /* line 306, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .printing-content-img {
+    margin-bottom: 0;
+    margin-right: -15px;
+    background-image: url("../images/tablet/printing/printing-style.png");
+    width: 365px;
+    height: 381px;
+  }
+  /* line 312, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .printing-content-img-style {
+    display: none;
+  }
+  /* line 318, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .printing .printing-form {
+    margin-top: 70px;
+    width: 240px;
+  }
+  /* line 322, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .printing .printing-form-input {
+    width: 240px;
+  }
+  /* line 326, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .printing .printing-form-button {
+    position: relative;
+    width: 240px;
+  }
+  /* line 330, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .printing .printing-form-button::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/tablet/printing/paper-plane.png");
+    width: 150px;
+    height: 265px;
+    left: 222px;
+    bottom: 20px;
+  }
+  /* line 344, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .section-reviews {
+    padding-top: 75px;
+  }
+  /* line 348, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .reviews-content-box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 353, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .reviews-content-title {
+    display: block;
+  }
+  /* line 357, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .reviews {
+    width: 690px;
+  }
+  /* line 360, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .reviews-box {
+    display: flex;
+    padding: 50px;
+  }
+  /* line 364, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .reviews-box-avatar {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 369, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .reviews-box-content {
+    padding: 0;
+    margin-left: 50px;
+  }
+  /* line 373, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .reviews-box-content-text {
+    margin-bottom: 10px;
+  }
+  /* line 377, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .reviews-box-content-name {
+    line-height: 25px;
+  }
+  /* line 381, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .reviews-box-content-link {
+    line-height: 20px;
+  }
+  /* line 388, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .slider-arrows {
+    justify-content: start;
+    margin-left: 10px;
+  }
+  /* line 394, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .section-faq {
+    padding-bottom: 100px;
+    position: relative;
+  }
+  /* line 104, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+  .section-faq::before, .section-faq::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    z-index: 10;
+  }
+  /* line 112, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+  .section-faq::before {
+    border-left: 2px solid #883eca;
+    right: 50%;
+    transform: translateX(-5px);
+    bottom: -15px;
+  }
+  /* line 119, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_scafolding.scss */
+  .section-faq::after {
+    border-right: 2px solid #883eca;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+  }
+  /* line 399, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .section-faq::before {
+    right: 132px;
+  }
+  /* line 403, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .section-faq::after {
+    left: 618px;
+  }
+  /* line 408, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 414, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-content-title {
+    margin-bottom: 40px;
+  }
+  /* line 418, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-content-text {
+    width: 690px;
+  }
+  /* line 423, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-form {
+    position: relative;
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  /* line 430, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-form::before {
+    content: "";
+    position: absolute;
+    width: 242px;
+    height: 219px;
+    background-image: url("../images/tablet/faq/figr-big.png");
+    background-repeat: no-repeat;
+    top: 55px;
+    right: 0;
+  }
+  /* line 441, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-form::after {
+    content: "";
+    position: absolute;
+    width: 86px;
+    height: 186px;
+    background-image: url("../images/tablet/faq/figr-little.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    right: -5px;
+    top: 100px;
+  }
+  /* line 454, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-form-wrapper {
+    margin: 0;
+    width: 660px;
+  }
+  /* line 458, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-form-wrapper::before {
+    background-image: url("../images/tablet/faq/cicrle.png");
+    width: 212px;
+    height: 168px;
+    right: 0;
+  }
+  /* line 465, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-form-wrapper::after {
+    font-size: 68px;
+    line-height: 82px;
+    right: 75px;
+  }
+  /* line 472, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-form-title {
+    width: 350px;
+    margin-bottom: 17px;
+  }
+  /* line 477, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-form-box {
+    display: flex;
+    width: 660px;
+  }
+  /* line 482, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-form-label {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  /* line 487, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-form-input {
+    width: 180px;
+    margin-bottom: 0;
+    left: -10px;
+  }
+  /* line 493, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .faq-form-button {
+    position: relative;
+    width: 192px;
+    max-height: 48px;
+    padding: 5px;
+    margin-right: 30px;
+    z-index: 10;
+  }
+  /* line 504, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .section-contacts {
+    background-image: url("../images/tablet/contacts/map-big.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 85px;
+  }
+  /* line 512, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .contacts-wrapper {
+    width: 375px;
+    margin-left: 15px;
+  }
+  /* line 516, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .contacts-wrapper .contacts {
+    padding-left: 60px;
+    min-width: 330px;
+  }
+  /* line 520, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .contacts-wrapper .contacts-title {
+    margin-bottom: 60px;
+  }
+  /* line 524, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .contacts-wrapper .contacts-links {
+    padding-left: 30px;
+  }
+  /* line 528, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .contacts-wrapper .contacts-links-link::before {
+    left: -30px;
+  }
+  /* line 536, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .map-location {
+    position: absolute;
+    right: 145px;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  /* line 544, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  /* line 549, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .footer-privacy {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 556, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .footer-privacy .confidential {
+    margin-bottom: 0;
+  }
+  /* line 562, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media750.scss */
+  .pop-up-close {
+    left: 510px;
+    top: 70px;
+  }
+}
+
+@media (min-width: 1170px) {
+  /* line 2, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .wrapper {
+    min-width: 1140px;
+  }
+  /* line 7, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .header {
+    padding-top: 55px;
+    padding-bottom: 70px;
+    background-image: url("../images/desktop/header/bg-header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* line 16, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .container {
+    margin-bottom: 95px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 22, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .container-logo {
+    margin-right: 135px;
+  }
+  /* line 26, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .container .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: static;
+    background-color: inherit;
+    padding-left: 0;
+    padding-top: 0;
+    height: inherit;
+  }
+  /* line 36, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .container .navigation-link {
+    color: #fff;
+  }
+  /* line 41, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .container .navigation .tel-box {
+    margin-top: 0;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+  }
+  /* line 47, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .container .navigation .tel-box:hover .tel-box-link {
+    opacity: 1;
+  }
+  /* line 51, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .container .navigation .tel-box-link {
+    margin-bottom: 0;
+    color: #fff;
+    opacity: 0.65;
+  }
+  /* line 57, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .container .navigation .tel-box-btn {
+    background-color: #fb0275;
+    border: 2px solid #fb0275;
+    color: #fff;
+    margin-left: 35px;
+  }
+  /* line 63, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .container .navigation .tel-box-btn:hover {
+    background-color: transparent;
+    border-color: #fff;
+  }
+  /* line 71, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .container .nav-burger {
+    display: none;
+  }
+  /* line 76, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .header-content {
+    margin-bottom: 110px;
+  }
+  /* line 79, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .header-content .container-image {
+    margin-right: 85px;
+  }
+  /* line 82, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .header-content .container-image-header {
+    width: 555px;
+    height: 545px;
+  }
+  /* line 89, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .header-content .inner-content .container-text {
+    margin-bottom: 80px;
+  }
+  /* line 92, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .header-content .inner-content .container-text-title {
+    font-size: 60px;
+    max-width: 355px;
+  }
+  /* line 97, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .header-content .inner-content .container-text-under {
+    font-size: 32px;
+    max-width: 426px;
+  }
+  /* line 103, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .header-content .inner-content .container-order {
+    display: flex;
+  }
+  /* line 106, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .header-content .inner-content .container-order-btn {
+    max-height: 50px;
+    margin-right: 30px;
+  }
+  /* line 111, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .header-content .inner-content .container-order-text {
+    margin-top: 0;
+  }
+  /* line 118, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .switch {
+    display: block;
+  }
+  /* line 121, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .switch .switch-inner-active {
+    display: block;
+  }
+  /* line 127, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-us {
+    padding-top: 105px;
+    padding-bottom: 150px;
+  }
+  /* line 132, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 138, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-content {
+    padding-left: 0;
+    max-width: 515px;
+    margin-left: 35px;
+  }
+  /* line 143, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-content-title {
+    margin-bottom: 80px;
+  }
+  /* line 147, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-content-subtitle {
+    margin-bottom: 60px;
+    max-width: 360px;
+  }
+  /* line 153, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-content-text:last-child {
+    margin-bottom: 0;
+  }
+  /* line 160, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-images {
+    width: 560px;
+    margin-top: 10px;
+  }
+  /* line 164, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-images::before {
+    background-image: url("../images/desktop/header/dashed.png");
+    width: 353px;
+    height: 298px;
+  }
+  /* line 170, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-images .box-ebook {
+    right: 20px;
+  }
+  /* line 174, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-images .box-tablet {
+    right: 0;
+    bottom: 0;
+  }
+  /* line 178, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-images .box-tablet::before {
+    background-image: url("../images/desktop/header/arrow1.png");
+    left: 45px;
+    top: -8px;
+  }
+  /* line 185, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-images .box-writer {
+    left: -10px;
+  }
+  /* line 189, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-images .box-moving {
+    left: 10px;
+    bottom: -42px;
+  }
+  /* line 193, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .about-images .box-moving::before {
+    background-image: url("../images/desktop/header/arrow3.png");
+    top: -5px;
+    left: 20px;
+  }
+  /* line 202, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .section-services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  /* line 206, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .section-services::before {
+    top: 140px;
+    left: 325px;
+  }
+  /* line 212, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .switch-position {
+    transform: translateY(-130px);
+  }
+  /* line 216, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services {
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-start;
+    position: relative;
+  }
+  /* line 222, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services-content {
+    max-width: 470px;
+    margin-bottom: 78px;
+  }
+  /* line 226, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services-content-title {
+    margin-bottom: 85px;
+  }
+  /* line 229, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services-content-subtitle {
+    margin-bottom: 55px;
+  }
+  /* line 234, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .slider {
+    margin-top: 130px;
+    margin-left: 65px;
+    margin-bottom: 0;
+  }
+  /* line 239, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .slider-box {
+    width: 574px;
+  }
+  /* line 242, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .slider-box::before {
+    width: 538px;
+  }
+  /* line 246, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .slider-box::after {
+    width: 499px;
+  }
+  /* line 251, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .slider-box-item-img {
+    width: 574px;
+  }
+  /* line 257, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .slider-text {
+    margin-right: 150px;
+  }
+  /* line 261, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .slider-arrows {
+    bottom: 35px;
+  }
+  /* line 266, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .services-container {
+    position: absolute;
+    bottom: 88px;
+  }
+  /* line 271, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .services-form-box {
+    width: 470px;
+  }
+  /* line 274, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .services-form-box .services-form {
+    display: block;
+  }
+  /* line 277, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .services-form-box .services-form-title {
+    margin-left: 0;
+  }
+  /* line 282, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .services .services-form-box-button {
+    width: 170px;
+  }
+  /* line 289, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .section-interior {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  /* line 293, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .section-interior::before {
+    left: 880px;
+    top: 50px;
+  }
+  /* line 301, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .interior .interior-content .interior-container {
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  /* line 308, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .interior .interior-content-subtitle {
+    margin-right: 140px;
+  }
+  /* line 312, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .interior .interior-content-button {
+    margin-right: 310px;
+    margin-bottom: 0;
+  }
+  /* line 317, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .interior .interior-content-img {
+    right: 210px;
+  }
+  /* line 320, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .interior .interior-content-img::before {
+    background-image: url("../images/desktop/interior/flower.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 898px;
+    height: 563px;
+    right: -265px;
+    bottom: 255px;
+  }
+  /* line 330, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .interior .interior-content-img-sofa {
+    display: none;
+  }
+  /* line 335, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .interior .interior-content .desktop-img-sofa {
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+  /* line 344, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .section-printing {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  /* line 348, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .section-printing::before {
+    top: 65px;
+    left: 325px;
+  }
+  /* line 356, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .printing-content {
+    margin-bottom: 0;
+  }
+  /* line 360, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .printing-content-box-text {
+    width: 556px;
+  }
+  /* line 365, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .printing-content-img {
+    background-image: url("../images/desktop/printing/printing.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 648px;
+    height: 544px;
+    position: absolute;
+    right: 320px;
+    top: 0;
+  }
+  /* line 378, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .printing .printing-form {
+    width: 760px;
+    margin-top: 100px;
+    margin-right: auto;
+  }
+  /* line 383, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .printing .printing-form-title {
+    min-width: 350px;
+  }
+  /* line 387, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .printing .printing-form-label {
+    margin-right: 40px;
+  }
+  /* line 391, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .printing .printing-form-button {
+    width: 190px;
+    bottom: 20px;
+  }
+  /* line 395, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .printing .printing-form-button::after {
+    background-image: url("../images/desktop/printing/arrow-plane.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 480px;
+    height: 330px;
+    bottom: -35px;
+    left: 190px;
+  }
+  /* line 410, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .section-reviews {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    overflow: hidden;
+    position: relative;
+  }
+  /* line 417, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .switch-position {
+    transform: translateY(-100px);
+  }
+  /* line 421, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .reviews-content-box {
+    position: relative;
+  }
+  /* line 425, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .reviews-content-title {
+    margin-bottom: 85px;
+  }
+  /* line 429, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .reviews {
+    width: 844px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 435, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .reviews-box-content {
+    max-width: 505px;
+  }
+  /* line 440, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .reviews .content-display {
+    display: none;
+  }
+  /* line 445, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .reviews-next {
+    display: block;
+    position: absolute;
+    margin-bottom: 0;
+    top: 118px;
+    opacity: 0.7;
+  }
+  /* line 453, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .reviews-slide-prev {
+    left: -730px;
+  }
+  /* line 457, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .reviews-slide-next {
+    right: -730px;
+  }
+  /* line 461, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .slider-arrows-reiews {
+    margin-left: 140px;
+  }
+  /* line 466, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .section-faq {
+    padding-bottom: 170px;
+  }
+  /* line 469, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .section-faq::before {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  /* line 474, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .section-faq::after {
+    right: 50%;
+    transform: translateX(9px);
+  }
+  /* line 480, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .switch-position {
+    transform: translateY(-220px);
+  }
+  /* line 484, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+  /* line 489, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-box {
+    align-self: flex-end;
+    margin-right: 40px;
+  }
+  /* line 493, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-box:last-child {
+    margin-right: 0;
+  }
+  /* line 500, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-content:last-child {
+    margin-bottom: 0;
+  }
+  /* line 504, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-content-text {
+    max-width: 545px;
+  }
+  /* line 509, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-form {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  /* line 513, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-form::before {
+    background-image: url("../images/desktop/form/figr-big.png");
+    width: 661px;
+    top: 0;
+  }
+  /* line 519, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-form::after {
+    background-image: url("../images/desktop/form/figr-small.png");
+    width: 505px;
+    top: 35px;
+  }
+  /* line 525, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-form-wrapper {
+    width: 760px;
+    margin-left: auto;
+    margin-right: 25px;
+    position: relative;
+    z-index: 10;
+  }
+  /* line 532, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-form-wrapper::before {
+    background-image: url("../images/desktop/form/cicrle1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 270px;
+    height: 241px;
+    right: 790px;
+    top: -55px;
+  }
+  /* line 542, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-form-wrapper::after {
+    right: 910px;
+    top: 20px;
+  }
+  /* line 548, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-form-box {
+    width: 760px;
+  }
+  /* line 552, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-form-label {
+    margin-right: 40px;
+    padding-left: 0;
+  }
+  /* line 557, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-form-input {
+    width: 240px;
+  }
+  /* line 561, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .faq-form-button {
+    margin-right: 0;
+    width: 230px;
+  }
+  /* line 568, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .section-contacts {
+    background-image: url("../images/desktop/ava-map/map-big.png");
+    padding-top: 120px;
+    padding-bottom: 150px;
+  }
+  /* line 574, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .contacts-wrapper {
+    width: 458px;
+    padding-top: 90px;
+    padding-bottom: 115px;
+  }
+  /* line 582, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .contacts-wrapper .contacts-links-link:last-child {
+    margin-bottom: 0;
+  }
+  /* line 590, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .map-location {
+    right: 681px;
+    transform: translateY(-83px);
+  }
+  /* line 597, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .footer-privacy .designer {
+    display: block;
+    order: -1;
+  }
+  /* line 603, ../../../../../../../../../../../../../Users/User/Desktop/Artactive-home/scss/_media1170.scss */
+  .pop-up-close {
+    left: 1095px;
+    top: 340px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
