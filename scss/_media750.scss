@@ -1,0 +1,567 @@
+@media (min-width: 750px) {
+  .wrapper {
+    width: 720px;
+  }
+
+//HEADER--------------()
+  .header {
+    padding-bottom: 40px;
+  }
+
+  .container {
+
+    .navigation {
+      opacity: 0;
+      width: 300px;
+      top: 70px;
+      left: 0;
+      z-index: 10;
+      padding-left: 70px;
+      padding-top: 25px;
+      transform: translateX(1000px);
+  
+      &-link {
+        padding: 0;
+      }
+  
+      .tel-box {
+        padding-left: 0;
+      }
+    }
+
+    .navigation-active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .nav-burger {
+      &-item {
+        z-index: 10;
+        background-color: #aeaeae;
+
+        &::before,
+        &::after {
+          background-color: #aeaeae;
+        }
+      }
+    }
+  }
+
+
+  .header-content {
+    display: flex;
+
+    .container-image {
+      margin-bottom: $margin;
+
+      &-header {
+        width: 440px;
+        height: 462px;
+      }
+    }
+
+    .inner-content {
+      margin-top: 40px;
+
+      .container-text {
+        margin-bottom: 30px;
+        &-title {
+          font-size: 45px;
+          max-width: 268px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .container-order {
+        &-btn {
+          width: 250px;
+        }
+      }
+    }
+  }
+  .button-down {
+    display: block;
+  }
+
+//ABOUT-US--------------()
+  .about-us {
+    position: relative;
+    padding-bottom: 145px;
+    @include line-down
+  }
+
+  .about-content {
+    padding-left: 15px;
+
+    &-subtitle {
+    font-size: 32px;
+  }
+}
+
+
+  .about-images {
+    &::before {
+      background-image: url('../images/tablet/about/dashed-tablet.png');
+      width: 500px;
+      height: 280px;
+      top: 65px;
+      left: 100px;
+    }
+
+    .box-ebook {
+      margin-bottom: $margin;
+      right: 120px;
+    }
+
+    .box-tablet {
+      width: 165px;
+      bottom: 45px;
+      
+      &::before {
+        background-image: url('../images/tablet/about/vector11.png');
+        left: 13px;
+        top: 30px;
+      }
+    }
+
+    .box-writer {
+      width: 150px;
+      margin: $margin;
+      top: 45px;
+
+      &::before {
+        top: 0;
+        left: 101px;
+      }
+    }
+
+    &-big-box {
+      justify-content: space-between;
+    }
+
+    .box-moving {
+      left: 80px;
+
+      &::before {
+        background-image: url('../images/tablet/about/vector33.png');
+        top: 17px;
+        left: -5px;
+      }
+    }
+  }
+
+//SERVICES--------------()
+  .section-services {
+    &::before {
+      left: 55px;
+    }
+  }
+
+  .services {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &-content {
+      margin-bottom: 70px;
+
+      &-subtitle {
+        font-size: 32px;
+        margin-bottom: 65px;
+      }
+    }
+
+    .slider {
+      position: relative;
+      margin-top: $margin;
+
+      &-box {
+        width: 690px;
+        height: 450px;
+
+        &::before {
+          width: 670px;
+          top: -10px;
+        }
+
+        &::after {
+          width: 650px;
+          top: -20px;
+        }
+
+        &-item {
+          &-img {
+            width: 690px;
+            height: 450px;
+          }
+        }
+      }
+
+      &-text {
+        margin-top: 30px;
+        text-align: end;
+      }
+
+      &-arrows {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    &-form-box {
+      width: 690px;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .services-form {
+        display: flex;
+
+        &-title {
+          margin-bottom: $margin;
+          margin-left: 35px;
+        }
+      }
+
+      &-button {
+        min-height: 45px;
+        padding: 0;
+      }
+    }
+  }
+
+//INTERIOR--------------()
+  .section-interior {
+    padding-bottom: 100px;
+
+    &::before {
+      left: 55px;
+      top: -15px;
+    }
+  }
+
+  .interior {
+    padding-left: 15px;
+    padding-right: 15px;
+    @include line-down;
+
+    &-content {
+      &-subtitle {
+        font-size: 32px;
+        width: 410px;
+        margin-bottom: 60px;
+      }
+
+      &-text {
+        width: 550px;
+      }
+
+      &-button {
+        width: 240px;
+        max-height: 50px;
+        padding: 8px 5px;
+      }
+      &-img {
+        width: 500px;
+        right: -220px;
+
+        &::before {
+          background-image: url('../images/tablet/interior/flower.png');
+          height: 442px;
+          width: 145px;
+        }
+
+        &-sofa {
+          width: 500px;
+        }
+      }
+    }
+  }
+
+//PRINTING--------------()
+  .section-printing {
+    padding-top: 110px;
+
+    &::before {
+      left: 55px;
+      top: 30px;
+    }
+  }
+
+  .printing {
+    padding-left: 15px;
+
+    &-content {
+      &-subtitle {
+        font-size: 32px;
+        width: 435px;
+      }
+
+      &-box {
+        max-height: 160px;
+
+        &-text {
+          width: 635px;
+        }
+      }
+
+      &-block {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+
+      &-img {
+        margin-bottom: $margin;
+        margin-right: -15px;
+        background-image: url('../images/tablet/printing/printing-style.png');
+        width: 365px;
+        height: 381px;
+        &-style {
+          display: none;
+        }
+      }
+    }
+
+    .printing-form {
+      margin-top: 70px;
+      width: 240px;
+
+      &-input {
+        width: 240px;
+      }
+
+      &-button {
+        position: relative;
+        width: 240px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          background-image: url('../images/tablet/printing/paper-plane.png');
+          width: 150px;
+          height: 265px;
+          left: 222px;
+          bottom: 20px;
+        }
+      }
+    }
+  }
+
+//REVIEWS--------------()
+  .section-reviews {
+    padding-top: 75px;
+  }
+
+  .reviews-content-box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .reviews-content-title {
+    display: block;
+  }
+
+  .reviews {
+    width: 690px;
+
+    &-box {
+      display: flex; 
+      padding: 50px;
+
+      &-avatar {
+        padding: 0;
+        margin: $margin;
+      }
+
+      &-content {
+        padding: 0;
+        margin-left: 50px;
+
+        &-text {
+          margin-bottom: 10px;
+          }
+
+        &-name {
+          line-height: 25px;
+        }
+
+        &-link {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .slider-arrows {
+    justify-content: start;
+    margin-left: 10px;
+  }
+
+//FAQ--------------()
+  .section-faq {
+    padding-bottom: 100px;
+    position: relative;
+    @include line-down;
+
+    &::before {
+      right: 132px;
+    }
+
+    &::after {
+      left: 618px;
+    }
+  }
+
+  .faq {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .faq-content {
+    &-title {
+      margin-bottom: 40px;
+    }
+
+    &-text {
+      width: 690px;
+    }
+  }
+
+  .faq-form {
+    position: relative;
+    margin-top: $margin;
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      width: 242px;
+      height: 219px;
+      background-image: url('../images/tablet/faq/figr-big.png');
+      background-repeat: no-repeat;
+      top: 55px;
+      right: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 86px;
+      height: 186px;
+      background-image: url('../images/tablet/faq/figr-little.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      right: -5px;
+      top: 100px;
+    }
+
+    &-wrapper {
+      margin: $margin;
+      width: 660px;
+
+      &::before {
+        background-image: url('../images/tablet/faq/cicrle.png');
+        width: 212px;
+        height: 168px;
+        right: 0;
+      }
+
+      &::after {
+        font-size: 68px;
+        line-height: 82px;
+        right: 75px;
+      }
+    }
+
+    &-title {
+      width: 350px;
+      margin-bottom: 17px;
+    }
+
+    &-box {
+      display: flex;
+      width: 660px;
+    }
+
+    &-label {
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    &-input {
+      width: 180px;
+      margin-bottom: $margin;
+      left: -10px;
+    }
+
+    &-button {
+      position: relative;
+      width: 192px;
+      max-height: 48px;
+      padding: 5px;
+      margin-right: 30px;
+      z-index: 10;
+    }
+  }
+
+//CONTACTS--------------()
+  .section-contacts {
+    background-image: url('../images/tablet/contacts/map-big.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 85px;
+  }
+
+  .contacts-wrapper {
+    width: 375px;
+    margin-left: 15px;
+
+    .contacts {
+      padding-left: 60px;
+      min-width: 330px;
+
+      &-title {
+        margin-bottom: 60px;
+      }
+
+      &-links {
+        padding-left: 30px;
+
+        &-link {
+          &::before {
+            left: -30px;
+          }
+        }
+      }
+    }
+  }
+
+  .map-location {
+    position: absolute;
+    right: 145px;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+
+//FOOTER--------------()
+  .footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .footer-privacy {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .confidential {
+      margin-bottom: $margin;
+    }
+  }
+}//--------MEDIA 750 END-------------------//

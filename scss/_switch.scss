@@ -1,0 +1,141 @@
+.switch,
+.switch .switch__button,
+.switch__subbutton {
+    display: none;
+}
+
+.switch {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    z-index: 3;
+    width: 23px;
+    transform: translateY(-50%);
+
+    &__heading {
+        display: none;
+    }
+}
+
+.switch__list,
+.switch__sublist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.switch__item {
+    height: 23px;
+    margin-top: 40px;
+
+    &--list {
+        height: 65px;
+        margin-top: 17px;
+
+        & + .switch__item {
+            margin-top: 17px;
+        }
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.switch__subitem {
+    height: 17px;
+
+    &:not(:first-child) {
+        margin-top: 7px;
+    }
+}
+
+.switch__label,
+.switch__indicator {
+    display: block;
+    position: relative;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    margin: 0 auto;
+    background-color: #e3e2e3;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        top: 0;
+        width: 22px;
+        height: 22px;
+        transition: width 0.2s ease-out 0s,
+            height 0.2s ease-out 0s,
+            top 0.2s ease-out 0s;
+    }
+}
+
+.switch__indicator {
+    padding: 0;
+    border: none;
+    outline: none;
+
+    &--checked {
+        top: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #e3e2e3;
+        background-color: #a044ff;
+        transition: width 0.2s ease-out 0s,
+            height 0.2s ease-out 0s,
+            top 0.2s ease-out 0s,
+            border-width 0.2s ease-out 0s,
+            background-color 0.5s ease-out 0s;
+    }
+}
+
+.switch__button {
+    &:checked ~ .switch__label {
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #e3e2e3;
+        background-color: #a044ff;
+        transition: border-width 0.2s ease-out 0s,
+            background-color 0.5s ease-out 0s,
+            padding 0.2s ease-out 0s,
+            top 0.2s ease-out 0s;
+    }
+
+    &:not(:checked):hover ~ .switch__label,
+    &:not(:checked):focus ~ .switch__label {
+        top: 0;
+        padding: 2px;
+        transition: padding 0.2s ease-out 0s,
+            top 0.2s ease-out 0s;
+    }
+}
+
+.switch__sublabel {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 18px;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        width: 11px;
+        height: 1px;
+        background-color: #e3e2e3;
+        transition: top 0.2s ease-out 0s,
+        height 0.2s ease-out 0s;
+    }
+}
+
+.switch__subbutton:checked ~ .switch__sublabel::before {
+    top: 4px;
+    height: 3px;
+    background-color: #a044ff;
+}

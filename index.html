@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/desktop/header/favicon-1.png">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js" ></script>
+    <script src="./js/script.js" defer></script>
     <title>
         Artactive
     </title>
 </head>
-<body>
+<body class="body">
     <div class="pop-up">
-        <button class="pop-up-close" type="button" onclick="this.parentElement.style.display='none';"></button>
-        <form class="pop-up-form" action="https://fom.in.ua/echo" method="POST">
+        <div class="pop-up-form pop-up-thanks">
+            <button class="pop-up-close" type="button"></button>
+            <h3 class="pop-up-text">
+                Отлично!
+            </h3>
+            <h2 class="pop-up-thanks-title">
+                Заказ успешно обработан, в ближайшее время
+                с вами свяжемся.
+            </h2>
+            <p class="pop-up-text">
+                Благодарим за использование нашего сервиса!
+            </p>
+            <button class="pop-up-btn-reset">
+                Вернутся
+            </button>
+        </div>
+        <form class="pop-up-form pop-up__is-active" action="https://fom.in.ua/echo" method="POST">
+            <button class="pop-up-close" type="button"></button>
             <h3 class="pop-up-text">
                 Есть вопросы?
             </h3>
@@ -25,147 +42,81 @@
             <label class="pop-up-tel">
                 <input class="pop-up-input" placeholder="Телефон" type="tel" name="tel">
             </label>
-            <button class="pop-up-btn">
+            <button type="submit" class="pop-up-btn">
                 ОТПРАВИТЬ
             </button>
         </form>
     </div>
-    <header class="header"><!-- header START -->
+    <aside class="switch" data-label="switch__heading">
+        <h2 class="switch__heading" id="switch__heading">
+            Переход к разделам сайта
+        </h2>
+        <ul class="switch__list">
+            <li class="switch__item">
+                <input id="switchButton__header" class="switch__button" type="radio" name="switchButton">
+                <label for="switchButton__header" class="switch__label" title="Перейти в начало страницы"></label>
+            </li>
+            <li class="switch__item">
+                <input id="switchButton__about-us" class="switch__button" type="radio" name="switchButton">
+                <label for="switchButton__about-us" class="switch__label" title="Перейти в раздел 'О нас'"></label>
+            </li>
+            <li class="switch__item switch__indicator-wrapper">
+                <button class="switch__indicator" type="button" tabindex="-1" title="Перейти в раздел 'Услуги'"></button>
+            </li>
+            <li class="switch__item switch__item--list">
+                <ul class="switch__sublist">
+                    <li class="switch__subitem">
+                        <input id="switchButton__services1" class="switch__subbutton" type="radio" name="switchButton">
+                        <label for="switchButton__services1" class="switch__sublabel" title="Перейти в первый раздел услуг"></label>
+                    </li>
+                    <li class="switch__subitem">
+                        <input id="switchButton__services2" class="switch__subbutton" type="radio" name="switchButton">
+                        <label for="switchButton__services2" class="switch__sublabel" title="Перейти во второй раздел услуг"></label>
+                    </li>
+                    <li class="switch__subitem">
+                        <input id="switchButton__services3" class="switch__subbutton" type="radio" name="switchButton">
+                        <label for="switchButton__services3" class="switch__sublabel" title="Перейти в третий раздел услуг"></label>
+                    </li>
+                </ul>
+            </li>
+            <li class="switch__item">
+                <input id="switchButton__reviews" class="switch__button" type="radio" name="switchButton">
+                <label for="switchButton__reviews" class="switch__label" title="Перейти в раздел 'Отзывы'"></label>
+            </li>
+            <li class="switch__item">
+                <input id="switchButton__questions" class="switch__button" type="radio" name="switchButton">
+                <label for="switchButton__questions" class="switch__label" title="Перейти в раздел 'Частые вопросы'"></label>
+            </li>
+            <li class="switch__item">
+                <input id="switchButton__contacts" class="switch__button" type="radio" name="switchButton">
+                <label for="switchButton__contacts" class="switch__label" title="Перейти в раздел 'Контакты'"></label>
+            </li>
+        </ul>
+      </aside>
+    <header id="home" class="header"><!-- header START -->
         <div class="wrapper">
-            <ul class="switch">
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn switch-btn-active">
-                        1
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list switch-list-active">
-                    <button type="button" class="switch-list-btn">
-                        2
-                        <ul class="switch-inner switch-inner-active">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        3
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        4
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        5
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-            </ul>
             <div class="container">
-                <a href="#" class="container-logo">
+                <a href="#home" class="container-logo">
                     Artactive
                 </a>
                 <nav class="navigation">
-                    <a href="#" target="_blank" class="navigation-link">
+                    <a href="#about-us" class="navigation-link">
                         О нас
                     </a>
-                    <a href="#" target="_blank" class="navigation-link">
+                    <a href="#services" class="navigation-link">
                         Услуги
                     </a>
-                    <a href="#" target="_blank" class="navigation-link">
+                    <a href="#reviews" class="navigation-link">
                         Отзывы
                     </a>
-                    <a href="#" target="_blank" class="navigation-link">
+                    <a href="#questions" class="navigation-link">
                         FAQ
                     </a>
-                    <a href="#" target="_blank" class="navigation-link">
+                    <a href="#contacts" class="navigation-link">
                         Контакты
                     </a>
                     <div class="tel-box">
-                        <a href="#" target="_blank" class="tel-box-link">
+                        <a href="tel:+79201488131" class="tel-box-link">
                             +7 (920) 148 81 31
                         </a>
                         <button type="button" class="tel-box-btn">
@@ -173,7 +124,7 @@
                         </button>
                     </div>
                 </nav>
-                <button class="nav-burger active" type="button">
+                <button id="burgerToogle" class="nav-burger" type="button">
                     <span class="nav-burger-item"></span>
                 </button>
             </div>
@@ -203,120 +154,8 @@
             <button type="button" class="button-down"></button>
         </div>
     </header><!-- header END -->
-    <section class="about-us"><!-- about-us START -->
+    <section id="about-us" class="about-us" data-label="about-us__heading"><!-- about-us START -->
         <div class="wrapper">
-            <ul class="switch">
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        1
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn switch-btn-active">
-                        2
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list switch-list-active">
-                    <button type="button" class="switch-list-btn">
-                        3
-                        <ul class="switch-inner switch-inner-active">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        4
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        5
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-            </ul>
             <div class="about">
                 <div class="about-content">
                     <h2 class="about-content-title">
@@ -382,122 +221,10 @@
             </div>
         </div>
     </section><!-- about-us END -->
-    <section class="section-services"><!-- services START -->
+    <section id="services" class="section-services" data-label="services__heading"><!-- services START -->
         <div class="wrapper">
-            <ul class="switch switch-position">
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        1
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        2
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list switch-list-active">
-                    <button type="button" class="switch-list-btn switch-btn-active">
-                        3
-                        <ul class="switch-inner switch-inner-active">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        4
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        5
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-            </ul>
             <div class="services">
-                <div class="services-content">
+                <div class="services-content" data-label="services-content__heading">
                     <h2 class="services-content-title">
                         2. Услуги
                     </h2>
@@ -545,12 +272,12 @@
                 <div class="services-container">
                     <form class="services-form-box" action="https://fom.in.ua/echo" method="POST">
                         <div class="services-form">
-                            <legend class="services-form-text">
+                            <span class="services-form-text">
                                 Есть вопросы?
-                            </legend>
-                            <legend class="services-form-title">
+                            </span>
+                            <p class="services-form-title">
                                 Закажите консультацию
-                            </legend>
+                            </p>
                         </div>
                         <button type="button" class="services-form-box-button">
                             Заказать
@@ -560,126 +287,14 @@
             </div>
         </div>
     </section><!-- services END -->
-    <section class="section-interior"><!-- interior START -->
+    <section id="section-interior" class="section-interior" data-label="section-interior__heading"><!-- interior START -->
         <div class="wrapper">
-            <ul class="switch switch-position">
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        1
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list switch-list-active">
-                    <button type="button" class="switch-list-btn switch-btn-active">
-                        2
-                        <ul class="switch-inner switch-inner-active">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        3
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        4
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        5
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-            </ul>
             <div class="interior">
                 <div class="interior-content">
                     <div class="interior-container">
-                        <p class="interior-content-subtitle">
+                        <h2 class="interior-content-subtitle">
                             Широкоформатная печать для вашего интерьера
-                        </p>
+                        </h2>
                         <p class="interior-content-text">
                             Печатаем широкоформатные фотографии на глянцевой 
                             и матовой фотобумаге разной плотности, на глянцевом 
@@ -700,125 +315,13 @@
             </div>
         </div>
     </section><!-- interior END -->
-    <section class="section-printing"><!-- printing START -->
+    <section id="section-printing" class="section-printing" data-label="section-printing__heading"><!-- printing START -->
         <div class="wrapper">
-            <ul class="switch switch-position">
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        1
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list switch-list-active">
-                    <button type="button" class="switch-list-btn switch-btn-active">
-                        2
-                        <ul class="switch-inner switch-inner-active">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        3
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        4
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        5
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-            </ul>
             <div class="printing">
                 <div class="printing-content">
-                    <p class="printing-content-subtitle">
+                    <h2 class="printing-content-subtitle">
                         Оперативная полиграфия — от визитки до баннера
-                    </p>
+                    </h2>
                     <div class="printing-content-box">
                         <p class="printing-content-box-text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing 
@@ -850,12 +353,12 @@
                         <img class="printing-content-img-style" src="./images/mobile/reviews/firm_style.png" alt="img-firm-style">
                     </div>
                     <form class="printing-form" action="https://fom.in.ua/echo" method="POST">
-                        <legend class="printing-form-text">
+                        <span class="printing-form-text">
                             Есть вопросы?
-                        </legend>
-                        <legend class="printing-form-title">
+                        </span>
+                        <p class="printing-form-title">
                             Оставьте заявку на консультацию
-                        </legend>
+                        </p>
                         <label class="printing-form-label">
                             <input class="printing-form-input" placeholder="Имя" type="text" name="name">
                         </label>
@@ -870,120 +373,8 @@
             </div>  
         </div>
     </section><!-- printing END -->
-    <section class="section-reviews"><!-- reviews START -->
+    <section id="reviews" class="section-reviews" data-label="reviews__heading"><!-- reviews START -->
         <div class="wrapper">
-            <ul class="switch switch-position">
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        1
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list switch-list-active">
-                    <button type="button" class="switch-list-btn">
-                        2
-                        <ul class="switch-inner switch-inner-active">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn switch-btn-active">
-                        3
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        4
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        5
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-            </ul>
             <div class="reviews-content-box">
                 <h2 class="reviews-content-title">
                     3. Отзывы
@@ -1061,120 +452,8 @@
             </div>
         </div>
     </section><!-- reviews END -->
-    <section class="section-faq"><!-- FAQ START -->
+    <section id="questions" class="section-faq" data-label="questions__heading"><!-- FAQ START -->
         <div class="wrapper">
-            <ul class="switch switch-position">
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        1
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list switch-list-active">
-                    <button type="button" class="switch-list-btn">
-                        2
-                        <ul class="switch-inner switch-inner-active">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        3
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn switch-btn-active">
-                        4
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-                <li class="switch-list">
-                    <button type="button" class="switch-list-btn">
-                        5
-                        <ul class="switch-inner">
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="switch-inner-list">
-                                <a href="#" class="switch-inner-link">
-                                    3
-                                </a>
-                            </li>
-                        </ul>
-                    </button>
-                </li>
-            </ul>
             <div class="faq">
                 <div class="faq-box">
                     <div class="faq-content">
@@ -1251,12 +530,12 @@
             </div>
             <form class="faq-form" action="https://fom.in.ua/echo" method="POST">
                 <div class="faq-form-wrapper">
-                    <legend class="faq-form-text">
+                    <span class="faq-form-text">
                         Остались вопросы?
-                    </legend>
-                    <legend class="faq-form-title">
+                    </span>
+                    <p class="faq-form-title">
                         Оставьте заявку на консультацию
-                    </legend>
+                    </p>
                     <div class="faq-form-box">
                         <label class="faq-form-label">
                             Имя
@@ -1274,7 +553,7 @@
             </form>
         </div>
     </section><!-- FAQ END -->
-    <section class="section-contacts"><!-- CONTACTS START -->
+    <section id="contacts" class="section-contacts" data-label="contacts__heading"><!-- CONTACTS START -->
         <div class="wrapper">
             <div class="contacts-wrapper">
                 <div class="contacts">
@@ -1296,7 +575,7 @@
             </div> 
         </div>
         <a href="#" target="_blank" class="map-location">
-            <img src="./images/mobile/footer/location.png" target="_blank" alt="Location">
+            <img src="./images/mobile/footer/location.png" alt="Location">
         </a> 
     </section><!-- CONTACTS END -->
     <footer class="footer">

@@ -1,0 +1,118 @@
+.section-faq {
+  padding-top: 35px;
+  padding-bottom: 85px;
+}
+
+.faq-content {
+  margin-bottom: 30px;
+
+  &-title {
+    margin-top: $margin;
+    @include title;
+    margin-bottom: 30px;
+  }
+
+  &-subtitle {
+    @include faq-title;
+  }
+
+  &-text {
+    @include faq-text;
+    width: 289px;
+  }
+}
+
+.faq-form {
+  box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+  border-radius: 10px;
+  background-color: #883eca;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  margin-top: 60px;
+  overflow: hidden;
+
+  &-wrapper {
+    width: 245px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    
+    &::before {
+      content: "";
+      width: 96px;
+      height: 104px;
+      position: absolute;
+      top: -45px;
+      right: -25px;
+      background-image: url('../images/mobile/footer/circle.png');
+    }
+
+    &::after {
+      content: "?";
+      position: absolute;
+      top: -42px;
+      right: -20px;
+      color: #fff;
+      font-family: "Muller Bold";
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 54px;
+    }
+  }
+
+  &-text {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    font-style: italic;
+    opacity: 0.8;
+  }
+
+  &-title {
+    width: 180px;
+    color: #fff;
+    font-family: "Open Sans - Semi Bold", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    opacity: 0.9;
+  }
+
+  &-button {
+    width: 245px;
+    @include button;
+    padding: 12px 10px;
+
+    &:hover {
+      border: 2px solid #fff;
+    }
+  }
+
+  &-label {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0.8;
+  }
+
+  &-input {
+    background: transparent;
+    color: #fff;
+    position: relative;
+    bottom: 10px;
+    width: 243px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

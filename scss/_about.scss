@@ -1,0 +1,142 @@
+.about-us {
+  padding-top: 40px;
+  padding-bottom: 55px;
+  position: relative;
+}
+
+.about-content {
+
+  &-title {
+    margin-top: $margin;
+    @include title;
+  }
+
+  &-subtitle {
+    margin-top: $margin;
+    @include subtitle; 
+  }
+
+  &-text {
+    margin-top: $margin;
+    @include text;
+  }
+}
+
+.about-images {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('../images/mobile/about-us/big-dashed.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    width: 290px;
+    top: 10px;
+  }
+
+  &-box {
+    width: 130px;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 10px;
+      left: 50%;
+      transform: translateX(50%);
+      top: -11px;
+    }
+
+    .img-box-text {
+      margin-top: 10px;
+      margin-bottom: $margin;
+      color: #5e606a;
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: center;
+    }
+  }
+
+  .box-ebook {
+    align-self: center;
+    margin-bottom: 45px;
+
+    &:first-child::before {
+      display: none;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .box-tablet {
+    
+    &::before {
+      background-image: url('../images/mobile/about-us/vector1.png');
+    }
+  }
+
+  .box-writer {
+    margin-top: 73px;
+    margin-right: 44px;
+    margin-bottom: 40px;
+
+    &::before {
+      background-image: url('../images/mobile/about-us/vector2.png');
+      top: 11px;
+      left: 100px;
+    }
+  }
+
+  .box-moving {
+    align-self: center;
+
+    &::before {
+      background-image: url('../images/mobile/about-us/vector3.png');
+      left: 80px;
+    }
+  }
+
+  &-big-box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .img-box {
+    margin-right: auto;
+    margin-left: auto;
+    width: 106px;
+    height: 106px;
+    background-color: #f0e2ff;
+    border-radius: 50%;
+    position: relative;
+
+    &-images {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .xxl {
+      position: absolute;
+      left: 50%;
+      top: 30px;
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      font-size: 9px;
+      font-weight: 700;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+  }
+}

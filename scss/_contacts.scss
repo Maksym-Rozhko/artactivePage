@@ -1,0 +1,116 @@
+.section-contacts {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 140px;
+  background-image: url('../images/mobile/footer/map.png');
+}
+
+.map-location {
+  width: 25px;
+  height: 38px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: -52px;
+  transition-duration: 0.5s;
+}
+
+.contacts-wrapper {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 23px 32px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   bottom: -90px;
+  //   width: 25px;
+  //   height: 38px;
+  //   background-image: url('../images/mobile/footer/location.png');
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  // }
+
+  .contacts {
+    padding-left: 40px;
+    width: 230px;
+
+    &-title {
+      @include title;
+      margin-top: $margin;
+      margin-bottom: 25px;
+    }
+  
+    &-links {
+      padding-left: 20px;
+
+      &-link {
+        position: relative;
+        display: block;
+        color: #5e606a;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        margin-bottom: 20px;
+        transition-duration: 0.5s;
+
+        &:hover {
+          color: #883eca;
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: -20px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .location-link {
+        
+        &::before {
+          width: 11px;
+          height: 17px;
+          background-image: url('../images/mobile/footer/location.png');
+          transition-duration: 0.5s;
+        }
+      }
+
+      .message-link {
+        &::before { 
+          width: 13px;
+          height: 10px;
+          background-image: url('../images/mobile/footer/message.png');
+          transition-duration: 0.5s;
+        }
+      }
+
+      .tel-link {
+        &::before {
+          width: 14px;
+          height: 15px;
+          background-image: url('../images/mobile/footer/tel.png');
+          transition-duration: 0.5s;
+        }
+      }
+
+      .contacts-links-link:hover::before {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+}

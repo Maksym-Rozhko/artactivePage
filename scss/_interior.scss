@@ -1,0 +1,73 @@
+.section-interior {
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background-color: #fff;
+  position: relative;
+
+  &::before {
+    content: "2";
+    @include bg-number;
+    width: 113px;
+    height: 140px;
+    color: #fff;
+    top: 5px;
+  }
+}
+
+.interior-content {
+  position: relative;
+  z-index: 10;
+
+  &-subtitle {
+    margin-top: $margin;
+    @include subtitle; 
+    margin-bottom: 45px;  
+  }
+
+  &-text {
+    width: 291px;
+    margin-top: $margin;
+    @include text;
+    margin-bottom: 45px;
+  }
+
+  &-button {
+    width: 289px;
+    @include button;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 10;
+  
+    &:hover {
+      color: #fb0275;
+      border: 2px solid #fb0275;
+    }
+  }
+
+  &-img {
+    position: relative;
+    right: -37px;
+    width: 268px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 80px;
+      width: 64px;
+      height: 245px;
+      background-image: url('../images/mobile/reviews/flower.png');
+    }
+
+    &-sofa {
+      position: relative;
+      z-index: 10;
+      display: block;
+      width: 268px;
+    }
+
+    .desktop-img-sofa {
+      display: none;
+    }
+  }
+}
