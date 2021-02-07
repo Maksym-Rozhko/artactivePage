@@ -3,6 +3,14 @@
     width: 720px;
   }
 
+  .pop-up {
+    &-form {
+      padding: 45px 60px 73px 62px;
+      max-width: 365px;
+    }
+  }
+  
+
 //HEADER--------------()
   .header {
     padding-bottom: 40px;
@@ -15,7 +23,7 @@
       width: 300px;
       top: 70px;
       left: 0;
-      z-index: 10;
+      z-index: 1111;
       padding-left: 70px;
       padding-top: 25px;
       transform: translateX(1000px);
@@ -36,7 +44,7 @@
 
     .nav-burger {
       &-item {
-        z-index: 10;
+        z-index: 1111;
         background-color: #aeaeae;
 
         &::before,
@@ -44,6 +52,10 @@
           background-color: #aeaeae;
         }
       }
+    }
+
+    .nav-burger.active {
+      left: 20px;
     }
   }
 

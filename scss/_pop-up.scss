@@ -7,12 +7,13 @@
   bottom: 0;
   right: 0;
   background-color: rgba(0, 1, 1, 0.4);
-  z-index: 1000;
+  z-index: 11111;
 
   &-form {
-    padding: 45px 60px 73px 62px;
+    max-width: 320px;
+    width: 100%;
+    padding: 45px 10px 73px 40px;
     background-image: linear-gradient(to right, #a044ff 0%, #6a3093 100%);
-    width: 363px;
     position: absolute;
     bottom: 50%;
     left: 50%;
@@ -64,6 +65,7 @@
   &-thanks-title {
     margin-bottom: 30px;
     font-size: 18px;
+    max-width: 255px;
     line-height: 25px;
   }
 

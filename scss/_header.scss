@@ -19,6 +19,7 @@
 
   .navigation {
     opacity: 0;
+    max-width: 320px;
     width: 100%;
     position: fixed;
     right: 0;
@@ -26,7 +27,7 @@
     background-color: #fff;
     height: 500px;
     transform: translateX(1000px);
-    z-index: 111;
+    z-index: 1111;
     transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
 
     &-link {
@@ -49,8 +50,15 @@
 
   .navigation-active {
     opacity: 1;
-    height: 500px;
+    height: 550px;
     transform: translateX(0);
+    box-shadow: 0 -80px 10px #6a3093;
+  }
+
+  .navigation-active .container-logo {
+    display: block;
+    color: #6a3093;
+    padding: 15px 15px;
   }
 
   .nav-burger {
@@ -65,7 +73,7 @@
     border: 0;
     background: none;
     cursor: pointer;
-    z-index: 11;
+    z-index: 1111;
     outline: none;
 
     &-item {
@@ -99,6 +107,14 @@
       }
     }
   }
+
+.nav-burger.active {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
 
 .nav-burger.active .nav-burger-item {
   background: none;

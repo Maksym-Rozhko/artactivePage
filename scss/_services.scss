@@ -76,6 +76,8 @@
       transform: translateX(-50%);
       top: -5px;
       z-index: 100;
+      animation: fadeElems 5s linear infinite;
+      animation-delay: 2.5s;
     }
 
     &::after {
@@ -88,6 +90,8 @@
       left: 50%;
       transform: translateX(-50%);
       top: -10px;
+      animation: fadeElems 5s linear infinite;
+      animation-delay: 2.5s;
     }
 
     &-item {
@@ -100,6 +104,9 @@
         height: 188px;
         position: relative;
         z-index: 100;
+        max-width: 100%;
+        animation: fade 5s linear infinite;
+        animation-delay: 2.5s;
       }
     }
 
@@ -127,12 +134,14 @@
 
     &-arrow {
       width: 80px;
-      border-bottom: 2px solid #883eca;
+      border: none;
+      border-bottom: 3px solid #883eca;
       border-radius: 1px;
-      padding: 0;
+      padding-bottom: 5px;
       cursor: pointer;
       position: relative;
       margin-right: 40px;
+      outline: none;
 
       &:last-child {
         margin-right: $margin;
@@ -142,7 +151,7 @@
         content: "";
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-3px);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -198,4 +207,32 @@
   }
 }
 
+// @keyframes fade {
+//   0% { 
+//     opacity: 1;
+//     transform: translate(0);
+//   }
+//   50% { 
+//     opacity: 0;
+//     transform: translateY(-50px); 
+//   }
+//   100% { 
+//     opacity: 1;
+//     transform: translate(0); 
+//   }
+// }
 
+// @keyframes fadeElems {
+//   0% { 
+//     opacity: 1;
+//     transform: translateX(-50%);
+//   }
+//   50% { 
+//     opacity: 0;
+//     transform: translateX(-50%) translateY(-50px); 
+//   }
+//   100% { 
+//     opacity: 1;
+//     transform: translateX(-50%); 
+//   }
+// }

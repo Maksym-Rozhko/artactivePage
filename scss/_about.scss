@@ -66,6 +66,11 @@
     }
   }
 
+  &-box:hover .img-box-images {
+    animation: 2s linear 0s normal none infinite running rot-n;
+    -webkit-animation: 2s linear 0s normal none infinite running rot-n;
+  }
+
   .box-ebook {
     align-self: center;
     margin-bottom: 45px;
@@ -120,6 +125,8 @@
     background-color: #f0e2ff;
     border-radius: 50%;
     position: relative;
+    animation: 3s linear 0s normal none infinite running changeColor;
+    -webkit-animation: 3s linear 0s normal none infinite running changeColor;
 
     &-images {
       position: relative;
@@ -138,5 +145,55 @@
       line-height: 18px;
       text-transform: uppercase;
     }
+  }
+
+  .img-box:hover {
+    cursor: pointer;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #f0e2ff;
+  }
+  25% {
+    background-color: #732ebd;
+  }
+  75% {
+    background-color: #9e4ff1;
+  }
+  100% {
+    background-color: #f0e2ff;
+  }
+}
+@-webkit-keyframes changeColor {
+  0% {
+    background-color: #f0e2ff;
+  }
+  25% {
+    background-color: #732ebd;
+  }
+  75% {
+    background-color: #9e4ff1;
+  }
+  100% {
+    background-color: #9e4ff1;
+  }
+}
+
+@keyframes rot-n {
+  0% {
+    transform: translateY(-50%) rotate(0);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes rot-n {
+  0% {
+    transform: translateY(-50%) rotate(0);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
   }
 }
