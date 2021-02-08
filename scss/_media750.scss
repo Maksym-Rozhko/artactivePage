@@ -405,8 +405,11 @@
   }
 
   .slider-arrows {
-    justify-content: start;
-    margin-left: 10px;
+    justify-content: space-between;
+  }
+
+  .swiper-slide-active {
+    transform: scale(1);
   }
 
 //FAQ--------------()

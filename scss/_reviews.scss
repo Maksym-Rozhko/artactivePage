@@ -1,6 +1,7 @@
 .section-reviews {
   padding-top: 35px;
   padding-bottom: 35px;
+  overflow: hidden;
 }
 
 .reviews-content-title {
@@ -27,6 +28,12 @@
       text-align: center;
       padding-top: 60px;
       margin-bottom: 40px;
+
+      &-img {
+        width: 136px;
+        height: 136px;
+        border-radius: 50%;
+      }
     }
 
     &-content {
@@ -59,4 +66,23 @@
       }
     }
   }
+}
+
+.swiper-container {
+  overflow: initial;
+}
+
+.swiper-slide {
+  transition-duration: .5s;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  opacity: .5;
+  transform: scale(.8);
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
 }

@@ -400,7 +400,7 @@
           width: 480px;
           height: 330px;
           bottom: -35px;
-          left: 190px;
+          left: 170px;
         }
       }
     }
@@ -410,7 +410,6 @@
   .section-reviews {
     padding-top: 130px;
     padding-bottom: 120px;
-    overflow: hidden;
     position: relative;
   }
 
@@ -455,7 +454,11 @@
   }
 
   .slider-arrows-reiews {
-    margin-left: 140px;
+    margin-left: 100px;
+  }
+
+  .swiper-slide-active {
+    transform: scale(1.2);
   }
 
 //FAQ--------------()

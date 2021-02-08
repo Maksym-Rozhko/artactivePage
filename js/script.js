@@ -11,6 +11,9 @@ const footerElem = document.querySelector('.footer');
 const navMenu = document.querySelector('.navigation');
 const burgerMenu = document.querySelector('#burgerToogle');
 const servicesFormBtn = document.querySelector('.services-form-box-button');
+const interiorOrderBtn = document.querySelector('.interior-content-button');
+const printingFormBtn = document.querySelector('.printing-form-button');
+const printingFormInputElems = document.querySelectorAll('.printing-form-input');
 
 
 function checkTitleText(titleTextElem) {
@@ -23,12 +26,17 @@ function checkTitleText(titleTextElem) {
   return newText;
 }
 
-closePopUp = (e) => {
+showPopUp = (e) => {
   popUpElem.classList.toggle('pop-up__hidden');
+  const orderForm = document.querySelector('.pop-up-form.pop-up__is-active');
+  const thanksForm = document.querySelector('.pop-up-form.pop-up-thanks');
+  
+  thanksForm.classList.remove('pop-up__is-active');
+  orderForm.classList.add('pop-up__is-active');
 }
 
 for (btn of popUpCloseBtn) {
-  btn.addEventListener('click', e => closePopUp(e));
+  btn.addEventListener('click', e => showPopUp(e));
 }
 
 window.addEventListener('click', e => {
@@ -40,21 +48,40 @@ orderCallBtn.addEventListener('click', () => {
   checkTitleText(popUpTitleElem);
   
   popUpTitleElem.innerHTML.includes('печать') ? popUpTitleElem.innerHTML = newText : false;
-  closePopUp();
+  showPopUp();
 });
 
 orderPrintBtn.addEventListener('click', () => {
   checkTitleText(popUpTitleElem);
 
   popUpTitleElem.innerHTML.includes('звонок') ? popUpTitleElem.innerHTML = newText : false;
-  closePopUp();
+  showPopUp();
 });
 
 servicesFormBtn.addEventListener('click', () => {
   checkTitleText(popUpTitleElem);
   popUpTitleElem.innerHTML = newText;
 
-  closePopUp();
+  showPopUp();
+});
+
+interiorOrderBtn.addEventListener('click', () => {
+  checkTitleText(popUpTitleElem);
+  popUpTitleElem.innerHTML = newText;
+
+  showPopUp();
+});
+
+printingFormBtn.addEventListener('click', e => {
+  e.preventDefault();
+  showPopUp();
+  const thanksForm = document.querySelector('.pop-up-form.pop-up-thanks');
+  const orderForm = document.querySelector('.pop-up-form.pop-up__is-active');
+  
+  orderForm.classList.remove('pop-up__is-active');
+  thanksForm.classList.add('pop-up__is-active');
+
+  setTimeout(resetApp(printingFormInputElems), 500);
 });
 
 function changeContainer() {
@@ -65,8 +92,8 @@ function changeContainer() {
   containerInactive.classList.add('pop-up__is-active');
 }
 
-function resetApp() {
-  for (input of popUpInputElems) {
+function resetApp(allInputsELems) {
+  for (input of allInputsELems) {
     input.value = ''
   }
 }
@@ -75,7 +102,7 @@ popUpBtnSubmit.addEventListener('click', e => {
   e.preventDefault();
   changeContainer();
 
-  setTimeout(resetApp, 500);
+  setTimeout(resetApp(popUpInputElems), 500);
 });
 
 resetFormBtn.addEventListener('click', changeContainer);
@@ -275,32 +302,27 @@ const imgItems = [
 ];
 
 const nextSlide = () => {
-  if (slideImg < (imgItems.length - 1)) {
-    slideImg++;
-  } else {
-    slideImg = 0;
-  }
+  slideImg < (imgItems.length - 1) ? slideImg++ : slideImg = 0;
   sliderImg.src = `${imgItems[slideImg]}`;
-  // sliderImg.classList.toggle('active');
 }
 
 const prevSlide = () => {
-  if (slideImg > 0) {
-    slideImg--;
-  } else {
-    slideImg = imgItems.length - 1;
-  }
+  slideImg > 0 ? slideImg-- : slideImg = imgItems.length - 1;
   sliderImg.src = `${imgItems[slideImg]}`;  
 }
-
-// setInterval(function() {
-//   sliderImg.src = imgItems[slideImg];
-//   slideImg++;
-//   if(slideImg >= imgItems.length) {
-//     slideImg = 0;
-//   } 
-// }, delay);
 
 nextSlide();
 btnHeaderNextSlide.addEventListener('click', nextSlide);
 btnHeaderPrevSlide.addEventListener('click', prevSlide);
+
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  loop: true,
+  centeredSlides: true,
+  navigation: {
+    nextEl: '.arrow-right',
+    prevEl: '.arrow-left',
+  },
+});
