@@ -23,7 +23,12 @@
 }
 
 .about-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
 
@@ -50,6 +55,8 @@
       width: 10px;
       height: 10px;
       left: 50%;
+      -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
       transform: translateX(50%);
       top: -11px;
     }
@@ -72,6 +79,8 @@
   }
 
   .box-ebook {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     margin-bottom: 45px;
 
@@ -104,6 +113,8 @@
   }
 
   .box-moving {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
 
     &::before {
@@ -113,7 +124,12 @@
   }
 
   &-big-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
   
@@ -131,6 +147,8 @@
     &-images {
       position: relative;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
     }
 
@@ -183,17 +201,21 @@
 
 @keyframes rot-n {
   0% {
+    -webkit-transform: translateY(-50%) rotate(0);
     transform: translateY(-50%) rotate(0);
   }
   100% {
+    -webkit-transform: translateY(-50%) rotate(360deg);
     transform: translateY(-50%) rotate(360deg);
   }
 }
 @-webkit-keyframes rot-n {
   0% {
+    -webkit-transform: translateY(-50%) rotate(0);
     transform: translateY(-50%) rotate(0);
   }
   100% {
+    -webkit-transform: translateY(-50%) rotate(360deg);
     transform: translateY(-50%) rotate(360deg);
   }
 }

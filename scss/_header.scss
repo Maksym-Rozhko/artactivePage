@@ -1,11 +1,15 @@
 .header {
   padding-top: 25px;
   padding-bottom: 65px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a044ff), to(#6a3093));
+  background-image: -o-linear-gradient(left, #a044ff 0%, #6a3093 100%);
   background-image: linear-gradient(to right, #a044ff 0%, #6a3093 100%);
 }
 
 .container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
 
@@ -26,11 +30,17 @@
     top: 70px;
     background-color: #fff;
     height: 500px;
+    -webkit-transform: translateX(1000px);
+    -ms-transform: translateX(1000px);
     transform: translateX(1000px);
     z-index: 1111;
+    -webkit-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    -o-transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
     transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
 
     &-link {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       @include link;
       opacity: 0.65;
@@ -39,6 +49,8 @@
       font-size: 13px;
       line-height: 48px;
       letter-spacing: 0.65px;
+      -webkit-transition-duration: 1s;
+      -o-transition-duration: 1s;
       transition-duration: 1s;
       padding: 5px 15px;
 
@@ -51,7 +63,10 @@
   .navigation-active {
     opacity: 1;
     height: 550px;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0);
+    -webkit-box-shadow: 0 -80px 10px #6a3093;
     box-shadow: 0 -80px 10px #6a3093;
   }
 
@@ -82,6 +97,8 @@
       height: 2px;
       background-color: #fff;
       position: absolute;
+      -webkit-transition: 0.5s linear;
+      -o-transition: 0.5s linear;
       transition: 0.5s linear;
 
       &::before,
@@ -93,6 +110,8 @@
         position: absolute;
         left: 0;
         z-index: 10;
+        -webkit-transition: 0.5s linear;
+        -o-transition: 0.5s linear;
         transition: 0.5s linear;
       }
 
@@ -121,13 +140,25 @@
   right: -7px;
 
   &::before {
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
     transform-origin: left top;
+    -webkit-transform: rotate(45deg)
+    translateX(-2px);
+    -ms-transform: rotate(45deg)
+    translateX(-2px);
     transform: rotate(45deg)
     translateX(-2px);
   }
 
   &::after {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
     transform-origin: left bottom;
+    -webkit-transform: rotate(-45deg)
+    translateX(-3px);
+    -ms-transform: rotate(-45deg)
+    translateX(-3px);
     transform: rotate(-45deg)
     translateX(-3px);
   }
@@ -160,6 +191,8 @@
       background: transparent;
       cursor: pointer;
       padding: 7px 10px;
+      -webkit-transition-duration: 1s;
+      -o-transition-duration: 1s;
       transition-duration: 1s;
 
       &:hover {

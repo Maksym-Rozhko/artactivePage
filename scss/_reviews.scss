@@ -13,6 +13,7 @@
 
 .reviews {
   width: 288px;
+  -webkit-box-shadow: 0 0 10px rgba(81, 8, 86, 0.08);
   box-shadow: 0 0 10px rgba(81, 8, 86, 0.08);
   border-radius: 10px;
   margin-bottom: 50px;
@@ -73,16 +74,22 @@
 }
 
 .swiper-slide {
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
   transition-duration: .5s;
 }
 
 .swiper-slide-prev,
 .swiper-slide-next {
   opacity: .5;
+  -webkit-transform: scale(.8);
+  -ms-transform: scale(.8);
   transform: scale(.8);
 }
 
 .swiper-slide-active {
   opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
 }

@@ -419,11 +419,17 @@
     @include line-down;
 
     &::before {
-      right: 132px;
+      border-left: 3px solid #883eca;
+      right: 50%;
+      transform: translateX(1px);
+      bottom: -22px;
     }
 
     &::after {
-      left: 618px;
+      border-right: 3px solid #883eca;
+      left: 50%;
+      transform: translateX(6px);
+      bottom: -69px;
     }
   }
 
@@ -524,11 +530,13 @@
 
 //CONTACTS--------------()
   .section-contacts {
-    background-image: url('../images/tablet/contacts/map-big.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../images/tablet/contacts/map-tablet.jpeg');
     padding-bottom: 85px;
+  }
+
+  .section-contacts .wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   .contacts-wrapper {
@@ -556,10 +564,7 @@
   }
 
   .map-location {
-    position: absolute;
-    right: 145px;
-    bottom: 50%;
-    transform: translateY(50%);
+    display: none;
   }
 
 //FOOTER--------------()

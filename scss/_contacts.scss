@@ -1,42 +1,25 @@
 .section-contacts {
   position: relative;
-  padding-top: 70px;
-  padding-bottom: 140px;
-  background-image: url('../images/mobile/footer/map.png');
+  padding-top: 170px;
+  padding-bottom: 340px;
+  background-image: url('../images/tablet/contacts/map-mobile.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .map-location {
-  width: 25px;
-  height: 38px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  bottom: -52px;
-  transition-duration: 0.5s;
+  display: none;
 }
 
 .contacts-wrapper {
   position: relative;
   background: #fff;
+  -webkit-box-shadow: 0 23px 32px rgba(0, 0, 0, 0.16);
   box-shadow: 0 23px 32px rgba(0, 0, 0, 0.16);
   border-radius: 10px;
   padding-top: 45px;
   padding-bottom: 50px;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   bottom: -90px;
-  //   width: 25px;
-  //   height: 38px;
-  //   background-image: url('../images/mobile/footer/location.png');
-  //   background-size: cover;
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  // }
 
   .contacts {
     padding-left: 40px;
@@ -60,6 +43,8 @@
         font-weight: 400;
         text-decoration: none;
         margin-bottom: 20px;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
         transition-duration: 0.5s;
 
         &:hover {
@@ -75,6 +60,8 @@
           position: absolute;
           left: -20px;
           top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
           transform: translateY(-50%);
         }
       }
@@ -85,6 +72,8 @@
           width: 11px;
           height: 17px;
           background-image: url('../images/mobile/footer/location.png');
+          -webkit-transition-duration: 0.5s;
+          -o-transition-duration: 0.5s;
           transition-duration: 0.5s;
         }
       }
@@ -94,6 +83,8 @@
           width: 13px;
           height: 10px;
           background-image: url('../images/mobile/footer/message.png');
+          -webkit-transition-duration: 0.5s;
+          -o-transition-duration: 0.5s;
           transition-duration: 0.5s;
         }
       }
@@ -103,14 +94,17 @@
           width: 14px;
           height: 15px;
           background-image: url('../images/mobile/footer/tel.png');
+          -webkit-transition-duration: 0.5s;
+          -o-transition-duration: 0.5s;
           transition-duration: 0.5s;
         }
       }
 
       .contacts-links-link:hover::before {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
         transform: scale(1.5);
       }
     }
   }
-
 }

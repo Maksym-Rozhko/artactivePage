@@ -14,6 +14,8 @@ const servicesFormBtn = document.querySelector('.services-form-box-button');
 const interiorOrderBtn = document.querySelector('.interior-content-button');
 const printingFormBtn = document.querySelector('.printing-form-button');
 const printingFormInputElems = document.querySelectorAll('.printing-form-input');
+const faqFormBtn = document.querySelector('.faq-form-button');
+const faqFormInputElems = document.querySelectorAll('.faq-form-input');
 
 
 function checkTitleText(titleTextElem) {
@@ -72,16 +74,26 @@ interiorOrderBtn.addEventListener('click', () => {
   showPopUp();
 });
 
-printingFormBtn.addEventListener('click', e => {
-  e.preventDefault();
-  showPopUp();
+function showThanksForm() {
   const thanksForm = document.querySelector('.pop-up-form.pop-up-thanks');
   const orderForm = document.querySelector('.pop-up-form.pop-up__is-active');
   
   orderForm.classList.remove('pop-up__is-active');
   thanksForm.classList.add('pop-up__is-active');
+}
 
+printingFormBtn.addEventListener('click', e => {
+  e.preventDefault();
+  showPopUp();
+  showThanksForm();
   setTimeout(resetApp(printingFormInputElems), 500);
+});
+
+faqFormBtn.addEventListener('click', e => {
+  e.preventDefault();
+  showPopUp();
+  showThanksForm();
+  setTimeout(resetApp(faqFormInputElems), 500);
 });
 
 function changeContainer() {

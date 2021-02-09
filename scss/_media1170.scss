@@ -464,22 +464,13 @@
 //FAQ--------------()
   .section-faq {
     padding-bottom: 170px;
-
-    &::before {
-      right: 50%;
-      transform: translateX(50%);
-    }
-
-    &::after {
-      right: 50%;
-      transform: translateX(9px);
-    }
   }
 
   .faq {
     display: flex;
     flex-direction: row;
     margin-bottom: 70px;
+    position: relative;
 
     &-box {
       align-self: flex-end;
@@ -566,6 +557,11 @@
     padding-bottom: 150px;
   }
 
+  .section-contacts .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .contacts-wrapper {
     width: 458px;
     padding-top: 90px;
@@ -583,8 +579,16 @@
   }
 
   .map-location {
-    right: 681px;
-    transform: translateY(-83px);
+    width: 25px;
+    height: 38px;
+    display: block;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: -32px;
+    bottom: -92px;
+    transform: translate(0);
   }
 
 //FOOTER--------------()

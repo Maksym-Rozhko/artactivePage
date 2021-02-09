@@ -1,4 +1,5 @@
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -75,6 +76,8 @@ $margin: 0;
   letter-spacing: 0.57px;
   padding: 15px 10px;
   cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 
   &:hover {
@@ -124,6 +127,8 @@ $margin: 0;
   &::before {
     border-left: 2px solid #883eca;
     right: 50%;
+    -webkit-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
     transform: translateX(-5px);
     bottom: -15px;
   }
@@ -131,6 +136,8 @@ $margin: 0;
   &::after {
     border-right: 2px solid #883eca;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: -60px;
   }
