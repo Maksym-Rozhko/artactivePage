@@ -2,7 +2,7 @@
 
 ##  pool construction professionally
 
-# See :link: [Netlify-Pages](https://artactive.netlify.app/)
+# See :link: [Github-Pages](https://maksym-rozhko.github.io/artactivePage/)
  
 ### Page development: :heavy_exclamation_mark: 
   * - adaptive/responsive; :white_check_mark:
