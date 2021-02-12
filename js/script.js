@@ -48,7 +48,7 @@ window.addEventListener('click', e => {
 
 orderCallBtn.addEventListener('click', () => {
   checkTitleText(popUpTitleElem);
-  
+ 
   popUpTitleElem.innerHTML.includes('печать') ? popUpTitleElem.innerHTML = newText : false;
   showPopUp();
 });
